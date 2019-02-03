@@ -59,14 +59,14 @@ class App extends Component {
             </Navbar.Header>
             <Navbar.Collapse>
               <Nav pullRight>
-                {this.state.isAuthenticated ? (
+                {this.state.isAuthenticated ? 
                   <Fragment>
                     <LinkContainer to="/settings">
                       <NavItem>Settings</NavItem>
                     </LinkContainer>
                     <NavItem onClick={this.handleLogout}>Logout</NavItem>
                   </Fragment>
-                ) : (
+                 : 
                   <Fragment>
                     <LinkContainer to="/signup">
                       <NavItem>Signup</NavItem>
@@ -75,7 +75,7 @@ class App extends Component {
                       <NavItem>Login</NavItem>
                     </LinkContainer>
                   </Fragment>
-                )}
+                }
               </Nav>
             </Navbar.Collapse>
           </Navbar>
